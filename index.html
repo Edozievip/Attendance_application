@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance App</title>
+    <title>student app</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <form action="" id="student-form">
-        <label for="name">Student Name:</label>
-        <input type="text" name="name" id="name" required>
-
-        <label for="class">Class:</label>
-        <input type="text" name="class" id="studentClass" required>
-
-        <label for="seat-no">Seat number:</label>
-        <input type="text" name="name" id="seat-no" required>
-
-        <button type="button" onclick="markAttendance('present')">P</button>
-        <button type="button" onclick="markAttendance('absent')">A</button>
-
-        <button type="submit">Save</button>
-    </form>
-
-
-
+    <div class="container">
+        <h1>Students Attendance App</h1>
+        <div class="input-container">
+            <input type="text" id="studentName" placeholder="Student Name">
+            <input type="text" id="seatNumber" placeholder="Seat Number">
+            <input type="text" id="studentClass" placeholder="Class">
+            <button class="green" onclick="markAttendance(('Present'))">Present</button>
+            <button class="red" onclick="markAttendance('Absent')">Absent</button>
+        </div>
+        <table id="attendanceTable">
+            <tr>
+                <th>Student Name</th>
+                <th>Seat Number</th>
+                <th>studentClass Number</th>
+                <th>Attendance</th>
+            </tr>
+        </table>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

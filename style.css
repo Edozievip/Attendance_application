@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 5px;
+    padding: 10px;
+}
+
+.red{
+    background-color: red;
+    border-radius: 15px;
+}
+
+.green{
+    background-color: green;
+    border-radius: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
